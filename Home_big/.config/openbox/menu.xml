@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>
+					x-terminal-emulator
+				</execute>
+			</action>
+		</item>
+		<item label="FireFox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="PcManFm">
+			<action name="Execute">
+				<execute>
+					pcmanfm
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Htop">
+			<action name="Execute">
+				<execute>
+					x-terminal-emulator -e 'htop'
+				</execute>
+			</action>
+		</item>
+		<menu id="root-menu-68459" label="Apps">
+			<item label="Videos (vlc)">
+				<action name="Execute">
+					<execute>
+						vlc
+					</execute>
+				</action>
+			</item>
+			<item label="Photos (gpicview) ">
+				<action name="Execute">
+					<execute>
+						gpicview
+					</execute>
+				</action>
+			</item>
+			<item label="Musiques (Mocp)">
+				<action name="Execute">
+					<execute>
+						x-terminal-emulator -e 'mocp'
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="GFrun">
+				<action name="Execute">
+					<execute>xterm -font -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-* -geometry 75x37 -e 'sh $HOME/GFrun/install/GFrunMenu.sh '</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-123837" label="Configurer">
+			<item label="./config">
+				<action name="Execute">
+					<execute>
+						pcmanfm ~/.config
+					</execute>
+				</action>
+			</item>
+			<item label="Obconf">
+				<action name="Execute">
+					<execute>
+						obconf
+					</execute>
+				</action>
+			</item>
+			<item label="Obmenu">
+				<action name="Execute">
+					<execute>
+						obmenu
+					</execute>
+				</action>
+			</item>
+			<item label="rc.xml">
+				<action name="Execute">
+					<execute>
+						leafpad ~/.config/openbox/rc.xml
+					</execute>
+				</action>
+			</item>
+			<item label="slim.conf">
+				<action name="Execute">
+					<execute>
+						x-terminal-emulator --geometry=35x2 -e 'sudo leafpad /etc/slim.conf'
+					</execute>
+				</action>
+			</item>
+			<item label="autostart">
+				<action name="Execute">
+					<execute>
+						leafpad ~/.config/openbox/autostart.sh
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Nitrogen">
+				<action name="Execute">
+					<execute>
+						nitrogen
+					</execute>
+				</action>
+			</item>
+			<item label="lxrandr ">
+				<action name="Execute">
+					<execute>
+						lxrandr 
+					</execute>
+				</action>
+			</item>
+			<item label="lxappearance">
+				<action name="Execute">
+					<execute>
+						lxappearance
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Tint2 Start">
+				<action name="Execute">
+					<execute>
+						tint2
+					</execute>
+				</action>
+			</item>
+			<item label="Tint2 Stop">
+				<action name="Execute">
+					<execute>
+						killall tint2
+					</execute>
+				</action>
+			</item>
+			<item label="tinit2rc Config">
+				<action name="Execute">
+					<execute>
+						leafpad ~/.config/tint2/tint2rc
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+		</menu>
+		<menu id="Debian"/>
+		<separator/>
+		<item label="Redemarrer">
+			<action name="Execute">
+				<execute>x-terminal-emulator -e &quot;telinit 6&quot;</execute>
+			</action>
+		</item>
+		<item label="Arreter">
+			<action name="Execute">
+				<execute>x-terminal-emulator -e &quot;telinit 0&quot;</execute>
+			</action>
+		</item>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>

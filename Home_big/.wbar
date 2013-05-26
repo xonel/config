@@ -1,0 +1,40 @@
+i: /usr/share/pixmaps/wbar/dock.png
+c: wbar --bpress --above-desk --vbar --pos left --grow --isize 50 --idist 5 --nanim 4 --falfa 45
+t: /usr/share/fonts/truetype/liberation/LiberationMono-Regular/10
+
+i: /usr/share/icons/nuoveXT2/128x128/apps/firefox.png
+c: firefox
+t: Web Browser
+
+i: /usr/share/icons/nuoveXT2/128x128/apps/kfm.png
+c: pcmanfm
+t: File Manager
+
+i: /usr/share/icons/nuoveXT2/128x128/apps/terminal.png
+c: lxterminal
+t: Terminal
+
+i: /usr/share/icons/nuoveXT2/128x128/apps/text-editor.png
+c: leafpad
+t: Leafpad
+
+i: /usr/share/icons/nuoveXT2/128x128/devices/media-cdrom-audio.png
+c: mocp
+t: Mocp
+
+i: /usr/share/icons/nuoveXT2/128x128/apps/gthumb.png
+c: gpicview
+t: Image Viewer
+
+i: /usr/share/icons/nuoveXT2/128x128/apps/internet-mail.png
+c: claws-mail
+t: E-Mail
+
+i: /home/nox/.local/share/icons/Gfrun.png
+c: xterm -font -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-* -geometry 75x35 -e 'sh $HOME/GFrun/install/GFrunMenu.sh '
+t: GFrun
+
+i: /usr/share/pixmaps/wbar/wbar.png
+c: wbar-config
+t: Config
+
